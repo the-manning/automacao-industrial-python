@@ -15,3 +15,13 @@ Este projeto é um protótipo desenvolvido em Python para simular a automação 
 2. Clone este repositório:
    ```bash
    git clone https://github.com/the-manning/automacao-industrial-python.git
+
+3. Acesse a pasta do projeto:
+   ```bash
+   cd automacao-industrial-python
+   ```
+
+4. Execute o arquivo principal no terminal:
+   ```bash
+   python main.py
+   ```
