@@ -12,9 +12,11 @@ Este projeto é um protótipo desenvolvido em Python para simular a automação 
 ## 🚀 Como rodar o programa
 
 1. Certifique-se de ter o [Python 3.x](https://www.python.org/) instalado em sua máquina.
+
 2. Clone este repositório:
    ```bash
    git clone https://github.com/the-manning/automacao-industrial-python.git
+   ```
 
 3. Acesse a pasta do projeto:
    ```bash
@@ -25,3 +27,59 @@ Este projeto é um protótipo desenvolvido em Python para simular a automação 
    ```bash
    python main.py
    ```
+
+## 💻 Exemplos de Entradas e Saídas
+
+### Exemplo 1: Peça Aprovada
+
+**Entrada (Input):**
+```text
+ID da Peça: P100
+Peso (g): 100
+Cor (azul/verde): azul
+Comprimento (cm): 15
+```
+
+**Saída (Output):**
+```text
+✅ Peça P100 APROVADA e adicionada à caixa atual.
+```
+
+### Exemplo 2: Peça Reprovada (Múltiplos Defeitos)
+
+**Entrada (Input):**
+```text
+ID da Peça: P101
+Peso (g): 85
+Cor (azul/verde): vermelho
+Comprimento (cm): 15
+```
+
+**Saída (Output):**
+```text
+❌ Peça P101 REPROVADA.
+Motivos: Peso fora do padrão (95g - 105g), Cor inválida (deve ser azul ou verde)
+```
+
+### Exemplo 3: Fecho de Caixa
+
+**Situação:** O utilizador regista a 10ª peça válida consecutiva.
+
+**Saída (Output):**
+```text
+✅ Peça P110 APROVADA e adicionada à caixa atual.
+📦 CAIXA 1 FECHADA (10 peças atingidas). Nova caixa iniciada.
+```
+
+### Exemplo 4: Relatório Final (Opção 5)
+
+**Saída (Output):**
+```text
+--- 5. RELATÓRIO FINAL ---
+✅ Total de Peças Aprovadas: 10
+❌ Total de Peças Reprovadas: 1
+📦 Quantidade de Caixas Fechadas: 1
+
+--- Motivos das Reprovações ---
+Peça ID P101: Peso fora do padrão (95g - 105g), Cor inválida (deve ser azul ou verde)
+```
